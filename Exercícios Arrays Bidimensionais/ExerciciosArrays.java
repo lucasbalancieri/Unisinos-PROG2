@@ -231,7 +231,9 @@ public class ExerciciosArrays {
 		int count = 0;
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {
-				uni[count++] = array[i][j];
+				if (array[i][j] >= 0) {
+					uni[count++] = array[i][j];
+				}
 			}
 		}
 		return uni;
